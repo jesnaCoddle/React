@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('../../assets/excavator3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+
+.home-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.brand-yellow {
+    color: #FFD700;
+}
+
+.brand-blue {
+    color: #006aff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+.logout button {
+    background-color: #FFD700;
+    border: none;
+    color: #000;
+    padding: 18px 26px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.content {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content p {
+    font-size:20px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.content button {
+    background-color: #1E90FF;
+    border: none;
+    padding: 10px 24px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.content button:hover {
+    background-color: #1c7ed6;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
