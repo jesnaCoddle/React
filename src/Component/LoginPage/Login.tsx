@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./loginModule.css";
 import { saveToken } from "../../utils/auth";
@@ -22,7 +22,8 @@ const LoginPage = () => {
             if (response.data.status === 200 && response.data.token) {
                 toast.success(response.data.message || "Login successful");
                 saveToken(response.data.token);
-                navigate("/");
+                navigate("/home");
+
             } else {
                 toast.error(response.data.message || "Login failed");
             }
@@ -60,7 +61,8 @@ const LoginPage = () => {
                 </form>
 
                 <p className="signup-text">
-                    Don't have an account? <a href="/signup">Sign up</a>
+                    Don't have an account?
+                    <Link to="/register">Sign Up</Link>
                 </p>
             </div>
 

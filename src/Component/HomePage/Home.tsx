@@ -1,43 +1,56 @@
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { getToken, removeToken } from "../../utils/auth";
 import './HomeModule.css';
 
 function HomePage() {
-    return (
-        <div className="home-container">
-            <header>
-                <div className='main'>
-                    <h1 className="brand">
-                        <span className="brand-yellow">Build</span>
-                        <span className="brand-blue">Rent</span>
-                    </h1>
-                    <nav className='navbar'>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Rent</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div className='logout'>
-                        <button type="button">Log Out</button>
-                    </div>
-                </div>
-            </header>
+  const navigate = useNavigate();
 
-            <div className="content">
-                <p>
-                    Rent top-grade machinery and equipment for your construction and industrial needs.
-                    Reliable, affordable, and easy-to-book.
-                </p>
-                <button type="button">Know More</button>
-            </div>
+  useEffect(() => {
+    const token = getToken();
+    if (!token) {
+      navigate("/");
+    }
+  }, [navigate]);
 
-            <footer>
-                <p>
-                    © 2025 BuildRent. All rights reserved. We provide premium construction and industrial machinery rentals across the region.
-                </p>
-            </footer>
+  const handleLogout = () => {
+    removeToken();
+    navigate("/");
+  };
+
+  return (
+    <div className="home-container">
+      <header>
+        <div className="main">
+          <h1 className="brand">
+            <span className="brand-yellow">Build</span>
+            <span className="brand-blue">Rent</span>
+          </h1>
+          <nav className="navbar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Rent</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div className="logout">
+            <button type="button" onClick={handleLogout}>Log Out</button>
+          </div>
         </div>
-    );
+      </header>
+
+      <div className="content">
+        <h2>Welcome to BuildRent</h2>
+        <p> Explore the largest platform for renting construction equipment. </p>
+        <button>Explore Equipment</button>
+      </div>
+
+      <footer>
+        <p>© 2025 BuildRent. All rights reserved.</p>
+      </footer>
+    </div>
+  );
 }
 
 export default HomePage;

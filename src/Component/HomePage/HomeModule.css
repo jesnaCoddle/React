@@ -7,7 +7,6 @@ body {
     color: #fff;
 }
 
-
 .home-container {
     background-color: rgba(0, 0, 0, 0.6);
     min-height: 100vh;
@@ -15,7 +14,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 header {
     background-color: rgba(255, 255, 255, 0.1);
@@ -76,8 +74,14 @@ header {
     margin: 0 auto;
 }
 
+.content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .content p {
-    font-size:20px;
+    font-size: 20px;
     line-height: 1.6;
     color: #f0f0f0;
     margin-bottom: 30px;
@@ -92,7 +96,6 @@ header {
     font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
-
 }
 
 .content button:hover {
