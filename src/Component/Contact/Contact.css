@@ -1,4 +1,3 @@
-/* Background and font styling */
 body {
     margin: 0;
     padding: 0;
@@ -7,16 +6,14 @@ body {
     background-size: cover;
   }
   
-  /* Container with dark overlay */
   .contact-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   
-  /* Central content area */
-  .content {
+ .content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -26,23 +23,20 @@ body {
     text-align: center;
   }
   
-  /* Heading styles */
   .content h2 {
     font-size: 52px;
-    color: #ffffff; /* Pure white */
+    color: #ffffff; 
     margin-bottom: 30px;
   }
   
-  /* Paragraph text styles */
   .content p {
-    font-size: 22px; /* Larger font */
-    color: #ffffff; /* Pure white */
+    font-size: 22px; 
+    color: #ffffff; 
     max-width: 900px;
     margin-bottom: 25px;
     line-height: 1.8;
   }
   
-  /* Contact detail section */
   .contact-details {
     margin: 30px 0;
   }

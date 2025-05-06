@@ -1,4 +1,4 @@
-/* Body reset and background */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,21 +7,19 @@ body {
     background-size: cover;
   }
   
-  /* Overlay wrapper for the whole page */
   .home-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   
-  /* Main content area */
   .content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center */
-    align-items: center;     /* Horizontally center */
+    justify-content: center; 
+    align-items: center;     
     padding: 40px;
     text-align: center;
   }

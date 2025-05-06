@@ -1,11 +1,11 @@
 footer {
     background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px 20px; /* Reduced the top/bottom padding */
+    padding: 20px 20px; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     color: #ccc;
-    align-items: flex-start; /* Ensures content is aligned to the top */
+    align-items: flex-start; 
   }
   
   footer h2 {
@@ -29,7 +29,7 @@ footer {
   .follow {
     flex: 1;
     min-width: 200px;
-    margin-bottom: 10px; /* Reduced bottom margin to fit content better */
+    margin-bottom: 10px; 
   }
   
   .links ul,
@@ -40,18 +40,18 @@ footer {
   
   .links li,
   .follow li {
-    margin-bottom: 6px; /* Reduced the gap between list items */
+    margin-bottom: 6px; 
     display: flex;
     align-items: center;
-    gap: 6px; /* Reduced gap between icon and text */
+    gap: 6px; 
   }
   
   .rights {
     text-align: center;
     width: 100%;
-    margin-top: 15px; /* Reduced the top margin */
+    margin-top: 15px; 
     border-top: 1px solid #555;
-    padding-top: 8px; /* Reduced padding on top */
+    padding-top: 8px;
     font-size: 12px;
     color: #aaa;
   }

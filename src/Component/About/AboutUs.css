@@ -1,4 +1,3 @@
-/* Background and font styling */
 body {
     margin: 0;
     padding: 0;
@@ -7,15 +6,13 @@ body {
     background-size: cover;
   }
   
-  /* Container with overlay */
   .about-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   
-  /* Centered content */
   .content {
     flex: 1;
     display: flex;
@@ -28,7 +25,7 @@ body {
   
   .content h2 {
     font-size: 48px;
-    color: #FFD700; /* Gold color for branding */
+    color: #FFD700; 
     margin-bottom: 20px;
   }
   

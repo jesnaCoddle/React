@@ -9,7 +9,7 @@ interface Equipment {
   make: string;
   model: string;
   year: number;
-  status: string;
+  STATUS: string;
   description: string;
   daily_rate: number;
 }
