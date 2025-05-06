@@ -1,0 +1,27 @@
+.equipment-booking {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.equipment-details {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.book-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}

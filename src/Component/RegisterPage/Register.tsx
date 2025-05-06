@@ -12,7 +12,6 @@ const RegisterPage = () => {
     email: '',
     password: ''
   });
-
   const navigate = useNavigate();
 
   const handleInput = (e: any) => {
@@ -24,13 +23,12 @@ const RegisterPage = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
     try {
       const response = await axios.post("http://localhost:3800/auth/register", values);
 
       if (response.status === 201) {
         toast.success("Registration successful");
-        navigate("/");
+        navigate("/"); // Redirect to the login page after successful registration
       } else {
         toast.error(response.data.message || "Registration failed");
       }
@@ -58,7 +56,7 @@ const RegisterPage = () => {
         </form>
 
         <p className="signup-text">
-          Already have an account? <Link to="/">Sign In</Link>
+          Already have an account? <Link to="/login">Sign In</Link>
         </p>
       </div>
 

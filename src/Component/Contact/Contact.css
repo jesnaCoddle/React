@@ -1,0 +1,55 @@
+/* Background and font styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../../assets/excavator3.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Container with dark overlay */
+  .contact-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  }
+  
+  /* Central content area */
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .content h2 {
+    font-size: 52px;
+    color: #ffffff; /* Pure white */
+    margin-bottom: 30px;
+  }
+  
+  /* Paragraph text styles */
+  .content p {
+    font-size: 22px; /* Larger font */
+    color: #ffffff; /* Pure white */
+    max-width: 900px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+  }
+  
+  /* Contact detail section */
+  .contact-details {
+    margin: 30px 0;
+  }
+  
+  .contact-details p {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  

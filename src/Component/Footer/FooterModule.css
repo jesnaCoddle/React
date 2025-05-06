@@ -1,0 +1,57 @@
+footer {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px 20px; /* Reduced the top/bottom padding */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ccc;
+    align-items: flex-start; /* Ensures content is aligned to the top */
+  }
+  
+  footer h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  footer p,
+  footer a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #FFD700;
+  }
+  
+  .about,
+  .links,
+  .follow {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px; /* Reduced bottom margin to fit content better */
+  }
+  
+  .links ul,
+  .follow ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li,
+  .follow li {
+    margin-bottom: 6px; /* Reduced the gap between list items */
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Reduced gap between icon and text */
+  }
+  
+  .rights {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px; /* Reduced the top margin */
+    border-top: 1px solid #555;
+    padding-top: 8px; /* Reduced padding on top */
+    font-size: 12px;
+    color: #aaa;
+  }

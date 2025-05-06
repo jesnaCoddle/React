@@ -1,28 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import LoginPage from "./Component/LoginPage/Login";
-import RegisterPage from "./Component/RegisterPage/Register";
-import HomePage from "./Component/HomePage/Home"; 
+import React from 'react';
+import RouteComponent from './routes/RouteComponent';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/register" element={<RegisterPage />} />
-      </Routes>
-
-      <ToastContainer
-        position="top-center"
-        autoClose={1000}
-        hideProgressBar={true}
-        closeOnClick
-        theme="colored"
-      />
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
+      <RouteComponent />
     </BrowserRouter>
   );
-}
+};
 
 export default App;
